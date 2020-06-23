@@ -8,6 +8,9 @@ class App extends Component {
     return (
       // Only return 1 component
       // Have to nested multiple components in one if want to return a lot of components
+      // This is JSX, not HTML
+      // You can do this, or use a bunch of React.createElement
+      // Like the ones below
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <h1>Another heading</h1>
