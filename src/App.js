@@ -15,6 +15,10 @@ class App extends Component {
     ]
   }
 
+  switchNameHandler = () => {
+    console.log('Was clicked!');
+  }
+
   render() {
     return (
       // Only return 1 component
@@ -22,11 +26,15 @@ class App extends Component {
       // This is JSX, not HTML
       // You can do this, or use a bunch of React.createElement
       // Like the ones below
+
+
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <h1>Another heading</h1>
         <p>This is really working</p>
-
+        {/* this.switchNameHandler() doesn't work*/}
+        {/* https://stackoverflow.com/questions/48259077/calling-a-javascript-function-in-jsx-why-does-calling-a-function-without-the */}
+        <button onClick = {this.switchNameHandler}>Switch Name</button>
         <Person />
         <Job />
         <Job />
