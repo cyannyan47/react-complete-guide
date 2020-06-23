@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person.js'
 import Job from './Person/Job.js'
+import Hobby from './Person/Hobby.js'
 
 class App extends Component {
   render() {
@@ -18,6 +19,9 @@ class App extends Component {
 
         <Person />
         <Job />
+        <Job />
+        <Job />
+        <Hobby name = "Minh" hobby = "Gaming"/>
       </div>
     );
     //Create an element to render in App
