@@ -5,6 +5,16 @@ import Job from './Person/Job.js'
 import Hobby from './Person/Hobby.js'
 
 class App extends Component {
+  // state is a reserved word
+  // a special parameter in Components
+  // from extends Component
+  state = {
+    persons: [
+      {name: 'Matt', hobby: 'Racing'},
+      {name: 'Vi', hobby: 'Albion'}
+    ]
+  }
+
   render() {
     return (
       // Only return 1 component
@@ -20,8 +30,9 @@ class App extends Component {
         <Person />
         <Job />
         <Job />
-        <Job />
         <Hobby name = "Minh" hobby = "Gaming"/>
+        <Hobby name = "Tester" hobby = "testing">This is a children inside Hobby!!</Hobby>
+        <Hobby name ={this.state.persons[0].name} hobby ={this.state.persons[0].hobby} />
       </div>
     );
     //Create an element to render in App

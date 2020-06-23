@@ -5,7 +5,11 @@ import React from 'react';
 // These props are from where Hobby is called
 const Hobby = (props) => {
   return (
-    <p>Hi, my name is {props.name} and my hobby is {props.hobby}</p>
+    <div>
+      <p>Hi, my name is {props.name} and my hobby is {props.hobby}</p>
+      <p>{props.children}</p>
+    </div>
+    
   );
 };
 
